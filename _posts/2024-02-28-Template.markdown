@@ -3,7 +3,7 @@ title: "Template"
 layout: post
 date: 2024-02-28 13:58
 tag: test
-image: /assets/images/waiting.jpg
+# image: /assets/images/waiting.jpg
 headerImage: true
 projects: true
 hidden: False
@@ -11,11 +11,25 @@ description: "This is a simple and minimalist template"
 category: project
 author: SG
 externalLink: false
----
-
-<!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png) -->
-
-Coming SOON
 
 ---
 
+![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+
+Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
+
+---
+
+What has inside?
+
+- Gulp
+- BrowserSync
+- Stylus
+- SVG
+- No JS
+- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
+
+---
+
+[Check it out](https://sergiokopplin.github.io/indigo/) here.
+If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues).
