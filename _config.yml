@@ -20,8 +20,8 @@ resume: False
 resume-external: False
 # resume-url: https://google.com/?q=my+resume
 
-url: https://iamsg08.github.io/about
-# your url: https://USERNAME.github.io
+url: https://iamsg08.github.io/
+your url: https://iamsg08.github.io/
 
 permalink: /:title/
 
