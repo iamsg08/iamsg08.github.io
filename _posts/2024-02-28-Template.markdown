@@ -1,9 +1,9 @@
 ---
-title: "Template"
+title: "template"
 layout: post
 date: 2024-02-28 13:58
 tag: test
-# image: /assets/images/waiting.jpg
+image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
 hidden: False
