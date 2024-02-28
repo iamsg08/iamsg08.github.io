@@ -1,0 +1,31 @@
+---
+title: "Template"
+layout: blog
+date: 2024-02-28 13:43
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- template example 
+category: project
+author: SG
+description: Template
+---
+
+## Summary:
+
+You can pick as item to see how to apply in markdown.
+
+#### Especial Elements
+- [Evidence](#evidence)
+- [Side-by-Side](#side-by-side)
+- [Star](#star)
+- [Especial Breaker](#especial-breaker)
+- [Spoiler](#spoiler)
+
+#### External Elements
+- [Gist](#gist)
+- [Codepen](#codepen)
+- [Slideshare](#slideshare)
+- [Videos](#videos)
+
+---
