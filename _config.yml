@@ -7,7 +7,7 @@ description: Something
 
 # if it's an external image, update below for true
 # better with square images
-external-image: True
+external-image: False
 picture: assets/images/PI_SG.jpg
 
 # your site color theme, true for dark theme, 
