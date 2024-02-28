@@ -6,7 +6,7 @@ tag: Machine Learning
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
-hidden: False
+hidden: false
 description: "What I did in this project"
 category: project
 author: Shubham Gupta
