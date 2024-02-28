@@ -16,11 +16,11 @@ dark-theme: True
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
-resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume: False
+resume-external: False
+# resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://iamsg08.github.io/about
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -37,9 +37,9 @@ disqus:
 # facebook: myfacebook
 # twitter: mytwitter
 # instagram: myinstagram
-linkedin: mylinkedin
+linkedin: https://www.linkedin.com/in/iamshubham-gupta/
 github: mygithub
-email: myemail@gmail.com
+email: iamsg08@gmail.com
 
 authors:
   johndoe:
