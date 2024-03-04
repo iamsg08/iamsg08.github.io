@@ -1,14 +1,14 @@
 ---
-title: "Basic Visual Machine Learning - ACRV"
+title: "Template"
 layout: post
-date: 2018-11-20 10:00
-tag: rfelixmg
+date: 2024-10-10 10:00
+tag: sg
 headerImage: true
 projects: true
 hidden: false # don't count this post in blog pagination
 description: ""
 category: project
-author: rfelixmg
+author: sg
 externalLink: false
 ---
 
