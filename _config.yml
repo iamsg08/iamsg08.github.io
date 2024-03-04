@@ -1,6 +1,6 @@
 # main text of home
 title: Shubham Gupta
-bio: Data Scientist , Hiker , t1 
+bio: Data Scientist , Hiker 
 
 # twitter summary info
 description: Something
@@ -41,7 +41,7 @@ github: mygithub
 email: iamsg08@gmail.com
 
 authors:
-  johndoe:
+  sg:
     name: Shuhbham Gupta
     bio: Data Scientist
     external-image: false
