@@ -1,5 +1,5 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "t2"
 layout: post
 date: 2024-03-04 16:45
 tag: jekyll
