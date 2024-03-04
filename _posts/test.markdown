@@ -1,7 +1,7 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "new headline"
 layout: post
-date: 2024-03-24 16:20
+date: 2016-01-23 22:10
 tag: jekyll
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
