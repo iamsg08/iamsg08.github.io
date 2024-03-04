@@ -1,11 +1,11 @@
 ---
-title: "Template"
+title: "Template Something"
 layout: post
 date: 2024-10-10 10:00
 tag: sg
 headerImage: true
 projects: true
-hidden: true # don't count this post in blog pagination
+hidden: false # don't count this post in blog pagination
 description: ""
 category: project
 author: sg
