@@ -5,7 +5,7 @@ date: 2018-11-20 10:00
 tag: rfelixmg
 headerImage: true
 projects: true
-hidden: true # don't count this post in blog pagination
+hidden: false # don't count this post in blog pagination
 description: ""
 category: project
 author: rfelixmg
