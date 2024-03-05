@@ -11,9 +11,6 @@ category: project
 author: sg
 externalLink: false
 ---
-
-# Header
-
-## Second Header 
-
-Text
+# Description 
+Developed metrics to track employee efficiency, utilization, productivity, and wasted hours. Created a Power BI dashboard to visualize performance trends, empowering Tricor to optimize resource allocation and streamline operations.
+---

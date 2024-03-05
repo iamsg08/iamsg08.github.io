@@ -12,6 +12,5 @@ author: sg
 externalLink: false
 ---
 # Description 
-
 Designed a machine learning model to forecast rail breaks across a large network in South Australia. The solution proactively identifies potential failures, allowing ARTC to reduce downtime, mitigate safety risks, and optimize maintenance expenses.
 ---
