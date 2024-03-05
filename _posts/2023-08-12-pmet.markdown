@@ -11,6 +11,8 @@ category: project
 author: sg
 externalLink: false
 ---
+
+---
 # Description 
 Built a machine learning solution to forecast engine failures in Thiess's 793D mining trucks. The model enables early detection, preventing downtime, reducing maintenance costs, and improving operational efficiency. This production-ready solution has generated significant cost savings for the client
 ---

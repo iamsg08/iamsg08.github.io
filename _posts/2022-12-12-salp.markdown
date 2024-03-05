@@ -11,6 +11,8 @@ category: project
 author: sg
 externalLink: false
 ---
+
+---
 # Description 
 Was part of a team which built predictive model to guide the South Australian Labor Party's electoral outreach efforts. The model identified key demographics and potential swing voters, maximizing campaign efficiency.
 ---
