@@ -4,30 +4,19 @@ layout: page
 ---
 ![Profile Image](assets/images/PI_SG.jpg)
 
-<p>Coming SOON</p>
+Hello, I am Shubham 
 
-<!-- <h2>Skills</h2> -->
+I am currently a Data Scientist at [InsightFactory.ai](https://insightfactory.ai/). I specialize in building and deploying machine learning models. I possess a strong command of the full data science pipeline, from data preparation and feature engineering to model deployment and management.  My toolkit includes PySpark, SQL, Pandas, MLflow, Python, Azure, Databricks, and Power BI.
 
-<!-- <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Tests)</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
+I received my M.Sc. in Data Science from the University of Adelaide in 2021. I also have Bachelors in Mechanical Engineering. 
+
+
+<h2>Skills</h2>
+
+<ul class="skill-list">
+	<li>Databricks</li>
+	<li>SQL</li>
 	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>Pyspark</li>
+	<li>MlFlow</li>
 </ul>
-
-<h2>Projects</h2> -->
-
-<!-- <ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul> -->
