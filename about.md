@@ -6,9 +6,9 @@ layout: page
 
 <p>Coming SOON</p>
 
-<h2>Skills</h2>
+<!-- <h2>Skills</h2> -->
 
-<ul class="skill-list">
+<!-- <ul class="skill-list">
 	<li>HTML - Jade - Haml - Erb</li>
 	<li>Responsive (Mobile First)</li>
 	<li>CSS (Stylus, Sass, Less)</li>
@@ -24,10 +24,10 @@ layout: page
 	<li>TDD e Continuous Integration</li>
 </ul>
 
-<h2>Projects</h2>
+<h2>Projects</h2> -->
 
-<ul>
+<!-- <ul>
 	<li><a href="https://github.com/">Lorem Lorem</a></li>
 	<li><a href="https://github.com/">Ipsum Dolor</a></li>
 	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+</ul> -->
