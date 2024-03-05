@@ -11,7 +11,7 @@ category: project
 author: sg
 externalLink: false
 ---
-# Short Description 
+# Description 
 
 Developed a classification model to optimize LRQA's audit strategy, leveraging historical non-conformance data to identify high-risk areas. Delivered insights through a Power BI dashboard, enabling data-driven decision-making.
 
