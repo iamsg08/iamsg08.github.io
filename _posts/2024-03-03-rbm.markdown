@@ -1,5 +1,5 @@
 ---
-title: "Predictive Maintenance : ARTC"
+title: "Predictive Maintenance: ARTC"
 layout: post
 date: 2024-03-03 10:00
 tag: sg
@@ -11,9 +11,7 @@ category: project
 author: sg
 externalLink: false
 ---
+# Short Description 
 
-# Header
-
-## Second Header 
-
-Text
+Designed a machine learning model to forecast rail breaks across a large network in South Australia. The solution proactively identifies potential failures, allowing ARTC to reduce downtime, mitigate safety risks, and optimize maintenance expenses.
+---
