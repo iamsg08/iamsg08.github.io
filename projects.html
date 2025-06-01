@@ -2,17 +2,113 @@
 layout: page
 title: Projects
 ---
-<section class="list">
-    {% for post in site.posts %}
-        {% if post.projects %}
+<style>
+:root {
+  --accent: #e95420;
+  --bg-dark: #181a1b;
+  --bg-card: #232526;
+  --text-main: #f3f4f6;
+  --text-muted: #b0b3b8;
+}
+
+body, .page-content {
+  background: var(--bg-dark) !important;
+  color: var(--text-main) !important;
+}
+
+.project-section {
+    margin-bottom: 3rem;
+}
+
+.project-header {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    border-left: none;
+    padding-left: 0;
+    letter-spacing: 1.5px;
+    background: none;
+    color: var(--accent);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    padding: 1.5rem 2rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+    color: var(--text-main);
+    border: 1px solid #232526;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 24px rgba(233,84,32,0.13);
+    transform: translateY(-2px) scale(1.01);
+    border-color: var(--accent);
+}
+
+.project-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+    text-decoration: none;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.project-title:hover {
+    text-decoration: underline;
+}
+
+.project-date {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+</style>
+
+<section>
+    <div class="project-section">
+        <div class="project-header">Rising Sun Pictures</div>
+        <div class="project-list">
+        {% assign rsp_projects = site.posts | where: "projects", true | where: "company", "Rising Sun Pictures" %}
+        {% for post in rsp_projects %}
             {% if post.hidden != true %}
-                <div class="item {% if post.star %}star{% endif %}">
-                    <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                        <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                        <h3 class="title">{{ post.title }}</h3>
-                    </a>
+                <div class="project-card">
+                    <a class="project-title" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a>
+                    <span class="project-date">{{ post.date | date: "%b %d, %Y" }}</span>
+                    <div>{{ post.excerpt | markdownify }}</div>
                 </div>
             {% endif %}
-        {% endif %}
-    {% endfor %}
+        {% endfor %}
+        </div>
+    </div>
+
+    <div class="project-section">
+        <div class="project-header">InsightFactory.ai</div>
+        <div class="project-list">
+        {% assign insight_projects = site.posts | where: "projects", true | where: "company", "InsightFactory.ai" %}
+        {% for post in insight_projects %}
+            {% if post.hidden != true %}
+                <div class="project-card">
+                    <a class="project-title" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">{{ post.title }}</a>
+                    <span class="project-date">{{ post.date | date: "%b %d, %Y" }}</span>
+                    <div>{{ post.excerpt | markdownify }}</div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
 </section>

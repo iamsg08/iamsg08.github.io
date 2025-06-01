@@ -3,6 +3,7 @@ title: "Predictive Maintenance: ARTC"
 layout: post
 date: 2024-03-03 10:00
 tag: sg
+company: InsightFactory.ai
 headerImage: true
 projects: true
 hidden: false # don't count this post in blog pagination

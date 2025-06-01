@@ -1,6 +1,6 @@
 # main text of home
 title: Shubham Gupta
-bio: Data Scientist , Hiker 
+bio: Machine Learning Developer at Rising Sun Pictures
 
 # twitter summary info
 description: Something
@@ -43,7 +43,7 @@ email: iamsg08@gmail.com
 authors:
   sg:
     name: Shuhbham Gupta
-    bio: Data Scientist
+    bio: Machine Learning Developer at Rising Sun Pictures
     external-image: false
     picture: assets/images/PI_SG.jpg
     # twitter: johndoe

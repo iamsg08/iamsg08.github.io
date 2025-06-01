@@ -1,0 +1,19 @@
+---
+title: Sinners
+date: 2025-04-17
+projects: true
+company: Rising Sun Pictures
+---
+I contributed to the visual effects for the film [Sinners (2025)](https://en.wikipedia.org/wiki/Sinners_(2025_film)) as part of the Rising Sun Pictures team.
+
+**Key highlights of my work:**
+- Developed and deployed machine learning solutions for advanced face replacement, enabling seamless transformation of stunt doubles into Michael B. Jordan’s twin characters.
+- Focused on performance transfer, ensuring the digital faces accurately reflected the nuances and expressions of the actors.
+- Collaborated with the VFX team to deliver high-quality, photorealistic results for complex action sequences.
+- Utilized deep learning frameworks such as PyTorch and advanced Python tools for pipeline development.
+
+**Learn more:**
+- [Sinners (2025) – Wikipedia](https://en.wikipedia.org/wiki/Sinners_(2025_film))
+- [Screen Rant: Sinners VFX Team Interview](https://screenrant.com/sinners-michael-b-jordan-twins-michael-ralla-james-alexander-vfx-team-interview/)
+
+My primary responsibility was to help create the illusion that Michael B. Jordan appears as twins on screen, by replacing stunt doubles’ faces with his likeness in a convincing and natural way.
