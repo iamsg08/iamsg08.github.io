@@ -3,6 +3,7 @@ title: "Predictive Maintenance: Thiess"
 layout: post
 date: 2023-08-12 10:00
 tag: sg
+company: InsightFactory.ai
 headerImage: true
 projects: true
 hidden: false # don't count this post in blog pagination
