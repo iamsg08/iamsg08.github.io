@@ -1,0 +1,8 @@
+<script>
+    (function () {
+        var savedTheme = null;
+        try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (error) {}
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = savedTheme || (systemDark ? 'dark' : 'light');
+    }());
+</script>

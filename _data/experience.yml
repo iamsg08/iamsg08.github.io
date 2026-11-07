@@ -1,0 +1,161 @@
+- id: rising-sun-pictures
+  company: Rising Sun Pictures
+  company_url: https://www.rsp.com.au/
+  role: Machine Learning Developer
+  period: August 2024 - Present
+  summary: Production machine learning for visual effects across feature-film and commercial workflows.
+  responsibilities_title: Machine Learning Work
+  responsibilities:
+    - title: Performance transfer and face replacement
+      summary: Develop production workflows that preserve facial performance while adapting an actor's appearance for visual-effects shots.
+    - title: ComfyUI and generative pipelines
+      summary: Build custom ComfyUI nodes and maintain generative workflows designed for production use.
+    - title: Maya and performance capture
+      summary: Connect model outputs to Maya facial rigs and extend performance-capture workflows with gaze estimation.
+    - title: Shot-specific ML solutions
+      summary: Develop purpose-built approaches for shot stitching, outpainting, and slow-motion generation with production supervisors.
+    - title: Production datasets and knowledge sharing
+      summary: Prepare large image datasets, document workflows, and present the team's machine-learning work to technical and student audiences.
+  projects_title: Selected Productions
+  project_label: Selected credit
+  projects:
+    - id: sinners
+      title: Sinners
+      featured: true
+      url: https://www.rsp.com.au/our-work/filmography/sinners/
+      case_study_url: /sin/
+      credit: Listed in Rising Sun Pictures' official crew credits.
+      summary: Contributed to RSP's visual-effects work on the film. Sinners was nominated for the 2026 Academy Award for Visual Effects.
+      resources:
+        - label: RSP filmography and crew credits
+          url: https://www.rsp.com.au/our-work/filmography/sinners/
+          type: Project
+        - label: Read the case study
+          url: /sin/
+          type: Case study
+          internal: true
+        - label: 2026 Visual Effects nominees
+          url: https://www.oscars.org/oscars/ceremonies/2026
+          type: Recognition
+        - label: Behind the Visual Effects of Sinners
+          url: https://www.youtube.com/watch?v=i2mRTtIqUqg
+          type: Video
+        - label: Michael becoming the Smokestack Twins
+          url: https://www.youtube.com/watch?v=s72cBC-v6UE&t=480s
+          type: Behind the scenes
+        - label: VFX team interview
+          url: https://screenrant.com/sinners-michael-b-jordan-twins-michael-ralla-james-alexander-vfx-team-interview/
+          type: Interview
+    - id: allianz-care-never-gives-up
+      title: "Allianz: Care Never Gives Up"
+      featured: true
+      url: https://www.rsp.com.au/our-work/filmography/allianz-care-never-gives-up/
+      credit: Credited by Rising Sun Pictures as Machine Learning Artist.
+      summary: Contributed to the published face-replacement work, helping preserve the athlete's performance while adapting his appearance across different stages of life.
+      resources:
+        - label: RSP project and crew credits
+          url: https://www.rsp.com.au/our-work/filmography/allianz-care-never-gives-up/
+          type: Project
+        - label: AEAF project entry
+          url: https://aeaf.tv/view-entries/categories/commercials-vfx/allianz-care-never-gives-up
+          type: Entry
+        - label: AEAF 2026 award recipients
+          url: https://aeaf.tv/hall-of-fame/aeaf-awards-2026-winners
+          type: Recognition
+    - id: apex
+      title: Apex
+      url: https://www.rsp.com.au/our-work/filmography/apex/
+      summary: Contributed to RSP's work on Apex.
+    - id: war-machine
+      title: War Machine
+      url: https://www.rsp.com.au/our-work/filmography/war-machine/
+      summary: Contributed to RSP's work on War Machine.
+    - id: the-bluff
+      title: The Bluff
+      url: https://www.rsp.com.au/our-work/filmography/the-bluff/
+      summary: Contributed to RSP's work on The Bluff.
+    - id: monarch-legacy-of-monsters-season-2
+      title: "Monarch: Legacy of Monsters — Season 2"
+      url: https://www.rsp.com.au/our-work/filmography/monarch-legacy-of-monsters-season-2/
+      summary: "Contributed to RSP's work on Monarch: Legacy of Monsters — Season 2."
+  recognition_title: Recognition
+  recognition:
+    - id: engineering-emmy
+      title: Engineering, Science & Technology Emmy
+      year: 2026
+      level: company
+      featured: true
+      description: I was part of Rising Sun Pictures' machine-learning team when the company was recognized with a 2026 Engineering, Science & Technology Emmy Award for AI-based face replacement and performance-preserving post-production transformation. Rising Sun Pictures was one of multiple organizational recipients.
+      source_url: https://www.televisionacademy.com/news/features/awards-news/260903-est-recipients
+      source_label: Television Academy announcement
+    - id: sinners-oscar-nomination
+      title: Sinners — Academy Award nomination
+      year: 2026
+      level: production
+      related_project: sinners
+      description: Sinners was nominated for the 2026 Academy Award for Visual Effects.
+      source_url: https://www.oscars.org/oscars/ceremonies/2026
+      source_label: Official Oscars result
+    - id: allianz-aeaf-special-merit
+      title: "Allianz: Care Never Gives Up — AEAF Special Merit Award"
+      year: 2026
+      level: team
+      related_project: allianz-care-never-gives-up
+      description: The RSP and Alt.VFX team received an AEAF 2026 Special Merit Award in Commercials VFX.
+      source_url: https://aeaf.tv/hall-of-fame/aeaf-awards-2026-winners
+      source_label: AEAF 2026 winners
+  gallery:
+    - id: rsp-emmy-team
+      role: primary
+      src: /assets/images/experience/rsp/emmy-team-1600.jpg
+      srcset: /assets/images/experience/rsp/emmy-team-960.jpg 960w, /assets/images/experience/rsp/emmy-team-1600.jpg 1600w
+      sizes: "(max-width: 900px) 100vw, 820px"
+      width: 1600
+      height: 1066
+      aspect_ratio: "3 / 2"
+      alt: Members of Rising Sun Pictures' machine-learning team gathered around the Engineering, Science and Technology Emmy.
+      caption: Rising Sun Pictures' machine-learning team with the 2026 Engineering, Science & Technology Emmy.
+    - id: rsp-emmy-portrait
+      role: secondary
+      src: /assets/images/experience/rsp/emmy-portrait-1000.jpg
+      srcset: /assets/images/experience/rsp/emmy-portrait-600.jpg 400w, /assets/images/experience/rsp/emmy-portrait-1000.jpg 667w
+      sizes: "(max-width: 720px) 100vw, 320px"
+      width: 667
+      height: 1000
+      aspect_ratio: "2 / 3"
+      alt: Shubham Gupta holding the Engineering, Science and Technology Emmy at Rising Sun Pictures.
+      caption: At Rising Sun Pictures following the team's Engineering, Science & Technology Emmy recognition.
+
+- id: insightfactory
+  company: InsightFactory.ai
+  company_url: https://insightfactory.ai/
+  role: Data Scientist
+  period: July 2021 - July 2024
+  summary: Applied machine learning and analytics across maintenance, operations, audit, and decision support.
+  responsibilities_title: Applied ML Work
+  responsibilities:
+    - title: Production data pipelines
+      summary: Built SQL and Databricks pipelines processing millions of time-series rows for scheduled model execution.
+  projects_title: Selected Projects
+  project_label: Selected project
+  projects:
+    - title: Predictive Maintenance - Thiess
+      featured: true
+      summary: Architected a fleet-wide engine-failure prediction system with monitoring and iterative model refinement.
+      case_study_url: /pmet/
+    - title: Predictive Maintenance - ARTC
+      featured: true
+      summary: Built a rail-break risk model with ongoing accuracy tracking against real-world outcomes.
+      case_study_url: /rbm/
+    - title: Operational Efficiency - Tricor
+      featured: true
+      summary: Delivered an executive-facing Power BI platform integrating multiple data sources for resource-allocation decisions.
+      case_study_url: /oet/
+    - title: Targeted Campaigning - SA Labor Party
+      featured: true
+      summary: Contributed to predictive modelling that supported more focused electoral outreach.
+      case_study_url: /salp/
+    - title: Audit Optimization - LRQA
+      featured: true
+      summary: Developed classification modelling to identify higher-risk audit areas.
+      case_study_url: /aol/

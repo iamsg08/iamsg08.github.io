@@ -1,0 +1,11 @@
+<section class="profile-section media-section" id="{{ include.id }}" aria-labelledby="{{ include.id }}-title">
+    <header class="section-header">
+        <h2 id="{{ include.id }}-title">{{ include.title }}</h2>
+        {% if include.archive_url %}<a href="{{ include.archive_url | relative_url }}">View the library <span aria-hidden="true">→</span></a>{% endif %}
+    </header>
+    <ul class="media-list">
+        {% for item in include.items limit:include.limit %}
+            {% include sections/interests/item.html item=item compact=true %}
+        {% endfor %}
+    </ul>
+</section>

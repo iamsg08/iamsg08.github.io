@@ -1,0 +1,35 @@
+{% assign youtube_id = "" %}
+{% if include.item.url contains "youtu.be/" %}
+    {% assign youtube_id = include.item.url | split: "youtu.be/" | last | split: "?" | first %}
+{% elsif include.item.url contains "youtube.com/watch" and include.item.url contains "v=" %}
+    {% assign youtube_id = include.item.url | split: "v=" | last | split: "&" | first %}
+{% elsif include.item.url contains "youtube.com/shorts/" %}
+    {% assign youtube_id = include.item.url | split: "youtube.com/shorts/" | last | split: "?" | first %}
+{% endif %}
+
+<li class="media-item{% if youtube_id != '' %} youtube-item{% endif %}">
+    {% unless include.compact %}
+        {% if youtube_id != "" %}
+            <div class="video-embed">
+                <iframe src="https://www.youtube-nocookie.com/embed/{{ youtube_id }}" title="{{ include.item.title | escape }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        {% endif %}
+    {% endunless %}
+
+    {% if include.item.image %}
+        {% if include.item.image contains "://" %}
+            <img class="media-thumbnail" src="{{ include.item.image }}" alt="" loading="lazy">
+        {% else %}
+            <img class="media-thumbnail" src="{{ include.item.image | relative_url }}" alt="" loading="lazy">
+        {% endif %}
+    {% elsif youtube_id != "" and include.compact %}
+        <img class="media-thumbnail" src="https://i.ytimg.com/vi/{{ youtube_id }}/mqdefault.jpg" alt="" loading="lazy">
+    {% endif %}
+
+    <div class="media-copy">
+        <p class="media-meta">{{ include.item.type }}{% if include.item.year %} · {{ include.item.year }}{% endif %}{% if include.item.status == "now" %} · In progress{% endif %}</p>
+        <h3>{% if include.item.url %}<a href="{{ include.item.url }}" target="_blank" rel="noopener noreferrer">{{ include.item.title }}</a>{% else %}{{ include.item.title }}{% endif %}</h3>
+        {% if include.item.creator %}<p class="media-creator">{{ include.item.creator }}</p>{% endif %}
+        {% if include.item.note %}<p class="media-note">{{ include.item.note }}</p>{% endif %}
+    </div>
+</li>

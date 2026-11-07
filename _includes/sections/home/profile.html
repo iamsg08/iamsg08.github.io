@@ -1,0 +1,18 @@
+<section class="profile-intro" aria-labelledby="profile-role">
+    <div class="profile-copy">
+        <img class="profile-photo" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.picture | relative_url }}{% endif %}">
+        <div>
+            <p class="profile-label">Current work</p>
+            <h1 id="profile-role">Machine Learning Developer</h1>
+        </div>
+        <p class="profile-bio">{{ site.intro }}</p>
+    </div>
+    <aside class="profile-links" aria-labelledby="elsewhere-title">
+        <h2 id="elsewhere-title">Elsewhere</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="mailto:{{ site.email }}">Email <span aria-hidden="true">↗</span></a></li>
+        </ul>
+    </aside>
+</section>

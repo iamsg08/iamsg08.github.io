@@ -1,0 +1,32 @@
+{% assign categories = "article,video,book,film,other" | split: "," %}
+<nav class="interest-browser" aria-labelledby="interest-browser-title">
+    <h2 id="interest-browser-title">Browse the library</h2>
+    <p>Articles and videos I want to share, alongside books and films that stay with me.</p>
+    <ul>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#films">Films</a></li>
+        {% assign other_items = site.data.interests | where: "type", "other" %}
+        {% if other_items.size > 0 %}<li><a href="#other">Other</a></li>{% endif %}
+    </ul>
+</nav>
+
+{% for category in categories %}
+    {% assign items = site.data.interests | where: "type", category | sort: "date_added" | reverse %}
+    {% if category != "other" or items.size > 0 %}
+        {% capture category_title %}{% if category == "other" %}Other{% else %}{{ category | capitalize }}s{% endif %}{% endcapture %}
+        <section class="interest-group" id="{{ category_title | strip | downcase }}" aria-labelledby="{{ category }}-title">
+            <h2 id="{{ category }}-title">{{ category_title | strip }}</h2>
+            {% if items.size > 0 %}
+                <ul class="media-list">
+                    {% for item in items %}
+                        {% include sections/interests/item.html item=item %}
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="empty-interest">No {{ category_title | strip | downcase }} shared yet.</p>
+            {% endif %}
+        </section>
+    {% endif %}
+{% endfor %}

@@ -23,6 +23,10 @@ layout: page
 
 {{content}}
 
+{% if page.projects %}
+    {% include project-evidence.html %}
+{% endif %}
+
 {% if site.post-advance-links contains page.category %}
     <div class="blog-navigation">
         {% if page.previous.hidden == false and page.previous.url %}
@@ -42,8 +46,4 @@ layout: page
 
 {% if site.show-author %}
     {% include author.html %}
-{% endif %}
-
-{% if site.disqus.categories contains page.category %}
-    {% include disqus.html %}
 {% endif %}

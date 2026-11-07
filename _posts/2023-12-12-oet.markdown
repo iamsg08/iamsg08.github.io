@@ -2,18 +2,15 @@
 title: "Operational Efficiency: Tricor"
 layout: post
 date: 2023-12-12 10:00
-tag: sg
+tags: [sg]
 company: InsightFactory.ai
 headerImage: true
 projects: true
-hidden: false # don't count this post in blog pagination
-description: ""
+hidden: false
+description: "Operational metrics and reporting for understanding workforce efficiency and utilization at Tricor."
 category: project
 author: sg
 externalLink: false
 ---
 
----
-# Description 
 Developed metrics to track employee efficiency, utilization, productivity, and wasted hours. Created a Power BI dashboard to visualize performance trends, empowering Tricor to optimize resource allocation and streamline operations.
----

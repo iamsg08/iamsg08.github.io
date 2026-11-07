@@ -1,0 +1,926 @@
+html
+    --background: #fcfcfa
+    --surface: #f1f4f1
+    --surface-elevated: #ffffff
+    --text: #17221f
+    --text-muted: #64716c
+    --text-subtle: #7b8782
+    --strong: #101916
+    --border: #dce3de
+    --accent: #176b5b
+    --accent-hover: #0f5145
+    --accent-soft: #dceee8
+    color-scheme: light
+
+html[data-theme="dark"]
+    --background: #111816
+    --surface: #1a2421
+    --surface-elevated: #202c28
+    --text: #eef3f0
+    --text-muted: #a5b2ac
+    --text-subtle: #84918b
+    --strong: #ffffff
+    --border: #303d38
+    --accent: #76c7ae
+    --accent-hover: #9bd9c5
+    --accent-soft: #243f37
+    color-scheme: dark
+
+html
+    scroll-behavior: smooth
+
+body
+    transition: background .18s ease, color .18s ease
+
+a
+    text-decoration-thickness: 1px
+    text-underline-offset: .2em
+
+button:focus-visible,
+a:focus-visible
+    outline: 3px solid var(--accent-soft)
+    outline-offset: 3px
+
+.wrapper-large
+    max-width: 960px
+
+.home,
+.projects,
+.experience,
+.education,
+.things-i-like,
+.resume
+    margin-top: 0
+
+.page
+    margin-top: 8rem
+
+    > h1
+        font-size: clamp(3rem, 5vw, 4.8rem)
+        letter-spacing: -.04em
+        margin-bottom: 3rem
+
+.page-title
+    font-size: clamp(3rem, 5vw, 4.8rem)
+    letter-spacing: -.04em
+    margin: 6rem 0 1rem
+    text-align: left
+
+.page-lead
+    color: $gama
+    font-size: 1.65rem
+    margin: 0 0 5rem
+    max-width: 64ch
+    text-align: left
+
+.profile-intro
+    border-bottom: 1px solid $epsilon
+    display: grid
+    gap: 7rem
+    grid-template-columns: minmax(0, 1.65fr) minmax(220px, .75fr)
+    padding: 5.5rem 0
+
+.profile-copy
+    align-content: start
+    display: grid
+    gap: 0 1.8rem
+    grid-template-columns: 76px minmax(0, 1fr)
+
+.profile-photo
+    border-radius: 50%
+    grid-row: 1 / 3
+    height: 76px
+    object-fit: cover
+    width: 76px
+
+.profile-label
+    color: $gama
+    font-size: 1.15rem
+    font-weight: 700
+    letter-spacing: .1em
+    margin: .2rem 0 .5rem
+    text-transform: uppercase
+
+.profile-copy h1
+    font-size: clamp(2.6rem, 4vw, 3.7rem)
+    letter-spacing: -.035em
+    line-height: 1.08
+    margin: 0
+
+.profile-bio
+    color: $alpha
+    font-size: 1.65rem
+    grid-column: 1 / -1
+    line-height: 1.65
+    margin: 2.4rem 0 0
+    max-width: 62ch
+
+.profile-links
+    border-left: 1px solid $epsilon
+    padding-left: 3rem
+
+    h2
+        font-size: 1.35rem
+        margin: .2rem 0 1.4rem
+
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+
+    li + li
+        border-top: 1px solid $epsilon
+
+    a
+        align-items: center
+        color: $beta
+        display: flex
+        font-size: 1.5rem
+        font-weight: 600
+        justify-content: space-between
+        padding: 1.25rem 0
+        text-decoration: none
+
+        &:hover
+            color: $delta
+
+.section-browser
+    background: var(--surface)
+    margin: 4rem 0 1rem
+    padding: 2rem 2.4rem
+    text-align: center
+
+    h2
+        font-size: 1.2rem
+        letter-spacing: .02em
+        margin: 0 0 1.2rem
+
+    ul
+        display: flex
+        flex-wrap: wrap
+        gap: 1.1rem 2.8rem
+        justify-content: center
+        list-style: none
+        margin: 0
+        padding: 0
+
+    a
+        color: $alpha
+        font-size: 1.45rem
+        text-decoration-color: transparent
+
+        &:hover,
+        &:focus-visible
+            color: $delta
+            text-decoration-color: currentColor
+
+.profile-section
+    padding: 5rem 0 0
+    scroll-margin-top: 2rem
+
+.section-header
+    align-items: baseline
+    display: flex
+    justify-content: center
+    margin-bottom: 1.2rem
+    position: relative
+    text-align: center
+
+    h2
+        font-size: 2rem
+        letter-spacing: -.02em
+        margin: 0
+
+    > a
+        font-size: 1.3rem
+        font-weight: 600
+        position: absolute
+        right: 0
+        text-decoration: none
+
+.profile-entry-list,
+.media-list
+    border-bottom: 1px solid $epsilon
+    list-style: none
+    margin: 0
+    padding: 0
+
+.profile-entry
+    align-items: start
+    border-top: 1px solid $epsilon
+    display: grid
+    gap: 2rem
+    grid-template-columns: 145px minmax(0, 1fr) auto
+    padding: 2.3rem 0
+
+.entry-period
+    color: $gama
+    font-size: 1.2rem
+    font-weight: 650
+    margin: .3rem 0 0
+
+.entry-main
+    h3
+        font-size: 1.8rem
+        letter-spacing: -.015em
+        line-height: 1.25
+        margin: 0
+
+.entry-place
+    color: $delta
+    font-size: 1.35rem
+    font-weight: 500
+    margin: .3rem 0 0
+
+.entry-summary
+    color: $alpha
+    font-size: 1.45rem
+    line-height: 1.55
+    margin: .8rem 0 0
+    max-width: 64ch
+
+.entry-link
+    color: $alpha
+    font-size: 1.25rem
+    font-weight: 600
+    margin-top: .3rem
+    text-decoration: none
+    white-space: nowrap
+
+    &:hover
+        color: $delta
+
+.entry-teaser
+    border-top: 1px solid $epsilon
+    display: grid
+    gap: 1rem 2rem
+    grid-column: 2 / -1
+    grid-template-columns: minmax(0, 1fr) auto
+    margin-top: .3rem
+    padding-top: 1.3rem
+
+    p
+        color: $gama
+        font-size: 1.35rem
+        line-height: 1.55
+        margin: 0 0 .7rem
+        max-width: 64ch
+
+    a
+        align-self: end
+        font-size: 1.25rem
+        font-weight: 700
+        justify-self: end
+        text-decoration: none
+        white-space: nowrap
+
+.media-item
+    align-items: start
+    border-top: 1px solid $epsilon
+    display: grid
+    gap: 1.8rem
+    grid-template-columns: auto minmax(0, 1fr)
+    padding: 2.2rem 0
+
+    > img
+        height: 64px
+        object-fit: cover
+        width: 64px
+
+.video-embed
+    aspect-ratio: 16 / 9
+    grid-column: 1 / -1
+    max-width: 720px
+    width: 100%
+
+    iframe
+        border: 0
+        height: 100%
+        width: 100%
+
+.media-copy
+    h3
+        font-size: 1.65rem
+        margin: .25rem 0
+
+        a
+            color: $beta
+            font-weight: 700
+            text-decoration-color: transparent
+
+            &:hover
+                color: $delta
+                text-decoration-color: currentColor
+
+.media-meta
+    color: $gama
+    font-size: 1.05rem
+    font-weight: 700
+    letter-spacing: .08em
+    margin: 0
+    text-transform: uppercase
+
+.media-creator
+    color: $gama
+    font-size: 1.25rem
+    margin: 0
+
+.media-note
+    font-size: 1.45rem
+    line-height: 1.55
+    margin: .7rem 0 0
+    max-width: 64ch
+
+.detail-list
+    margin: 0
+    max-width: 820px
+
+.detail-section
+    border-top: 1px solid $epsilon
+    padding: 4rem 0
+    scroll-margin-top: 2rem
+
+    &:last-child
+        border-bottom: 1px solid $epsilon
+
+.detail-header
+    margin-bottom: 2.5rem
+
+    h2
+        font-size: clamp(2.5rem, 4vw, 3.5rem)
+        letter-spacing: -.035em
+        margin: 0 0 .5rem
+
+    > a,
+    > .detail-place
+        color: $delta
+        font-size: 1.5rem
+        font-weight: 650
+        text-decoration: none
+
+    > p:last-child
+        font-size: 1.6rem
+        line-height: 1.65
+        margin-top: 1.4rem
+        max-width: 64ch
+
+.detail-period,
+.item-period
+    color: $gama
+    font-size: 1.1rem
+    font-weight: 700
+    letter-spacing: .08em
+    margin-bottom: .8rem
+    text-transform: uppercase
+
+.highlight-list
+    border-top: 1px solid $epsilon
+
+.highlight-item
+    display: grid
+    gap: 2rem
+    grid-template-columns: minmax(170px, .7fr) minmax(0, 1.7fr)
+    padding: 2.1rem 0
+
+    & + &
+        border-top: 1px solid $epsilon
+
+    h3
+        color: $beta
+        font-size: 1.5rem
+        font-weight: 700
+        line-height: 1.4
+        margin: 0
+
+        a
+            color: $beta
+            font-weight: inherit
+            text-decoration-color: transparent
+
+            &:hover
+                color: $delta
+                text-decoration-color: currentColor
+
+    > p
+        font-size: 1.5rem
+        line-height: 1.62
+        margin: 0
+
+    .item-period
+        grid-column: 1
+        margin: -1.3rem 0 0
+
+.resource-links
+    grid-column: 2
+    list-style: none
+    margin: 0
+    padding: 0
+
+    a
+        text-decoration: none
+
+.resource-type
+    color: $gama
+    font-size: 1.05rem
+    margin-left: .5rem
+    text-transform: uppercase
+
+.experience-subsection
+    padding: 3.5rem 0 1rem
+
+    & + &
+        border-top: 1px solid $epsilon
+        margin-top: 3rem
+
+.experience-subheading
+    font-size: 2rem
+    letter-spacing: -.02em
+    margin: 0 0 2.2rem
+    text-align: center
+
+.responsibility-list,
+.production-resources,
+.additional-productions ul,
+.recognition-list
+    list-style: none
+    margin: 0
+    padding: 0
+
+.responsibility-list
+    border-bottom: 1px solid $epsilon
+
+    li
+        align-items: start
+        border-top: 1px solid $epsilon
+        display: grid
+        gap: 2rem
+        grid-template-columns: minmax(190px, .8fr) minmax(0, 1.6fr)
+        padding: 1.8rem 0
+
+    h4
+        font-size: 1.45rem
+        line-height: 1.4
+        margin: 0
+
+    p
+        color: $alpha
+        font-size: 1.45rem
+        line-height: 1.6
+        margin: 0
+
+.featured-production-list
+    border-bottom: 1px solid $epsilon
+
+.featured-production
+    border-top: 1px solid $epsilon
+    display: grid
+    gap: 2.2rem
+    grid-template-columns: minmax(190px, .8fr) minmax(0, 1.6fr)
+    padding: 2.6rem 0
+    scroll-margin-top: 2rem
+
+    header
+        grid-row: 1 / 3
+
+    h4
+        font-size: 1.9rem
+        letter-spacing: -.015em
+        line-height: 1.3
+        margin: .4rem 0 0
+
+        a
+            color: $beta
+            text-decoration-color: transparent
+
+            &:hover,
+            &:focus-visible
+                color: $delta
+                text-decoration-color: currentColor
+
+.production-label,
+.recognition-meta
+    color: $gama
+    font-size: 1rem
+    font-weight: 700
+    letter-spacing: .08em
+    margin: 0
+    text-transform: uppercase
+
+.production-credit
+    color: $delta
+    font-size: 1.25rem
+    font-weight: 650
+    line-height: 1.5
+    margin: 1rem 0 0
+
+.production-summary
+    font-size: 1.5rem
+    line-height: 1.65
+    margin: 0
+
+.production-resources
+    display: grid
+    gap: .8rem
+    grid-column: 2
+
+.production-resource a
+    align-items: center
+    background: var(--surface)
+    color: $beta
+    display: grid
+    gap: 1.2rem
+    grid-template-columns: minmax(0, 1fr) auto
+    min-height: 5.2rem
+    padding: 1rem 1.2rem
+    text-decoration: none
+
+    &:hover,
+    &:focus-visible
+        color: $delta
+
+.production-resource-video a
+    grid-template-columns: 96px minmax(0, 1fr) auto
+
+    img
+        aspect-ratio: 16 / 9
+        height: auto
+        object-fit: cover
+        width: 96px
+
+.resource-copy
+    display: flex
+    flex-direction: column
+    gap: .2rem
+
+    strong
+        font-size: 1.3rem
+        line-height: 1.4
+
+.production-resource .resource-type
+    color: $gama
+    font-size: .95rem
+    font-weight: 700
+    letter-spacing: .08em
+    margin: 0
+    text-transform: uppercase
+
+.resource-arrow
+    color: $gama
+
+.additional-productions
+    padding-top: 3.2rem
+
+    > h4
+        font-size: 1.5rem
+        margin: 0 0 1rem
+
+    ul
+        border-bottom: 1px solid $epsilon
+
+    li
+        align-items: baseline
+        border-top: 1px solid $epsilon
+        display: grid
+        gap: 1.5rem
+        grid-template-columns: minmax(230px, .8fr) minmax(0, 1.5fr)
+        padding: 1.4rem 0
+
+    a
+        color: $beta
+        font-size: 1.35rem
+        font-weight: 700
+        text-decoration-color: transparent
+
+        &:hover,
+        &:focus-visible
+            color: $delta
+            text-decoration-color: currentColor
+
+    li > span
+        color: $gama
+        font-size: 1.3rem
+
+.recognition-photo
+    margin: 0
+
+    img
+        background: var(--surface)
+        display: block
+        height: auto
+        width: 100%
+
+    figcaption
+        color: $gama
+        font-size: 1.15rem
+        line-height: 1.5
+        margin-top: .8rem
+
+.recognition-photo-primary
+    margin-bottom: 3rem
+
+.recognition-feature
+    align-items: start
+    display: grid
+    gap: 3rem
+    grid-template-columns: minmax(220px, .72fr) minmax(0, 1.28fr)
+
+.recognition-photo-secondary img
+    aspect-ratio: 2 / 3
+    object-fit: cover
+
+.recognition-copy
+    h4
+        font-size: 2rem
+        letter-spacing: -.02em
+        margin: .6rem 0 1rem
+
+    > p:not(.recognition-meta)
+        font-size: 1.5rem
+        line-height: 1.65
+        margin: 0 0 1rem
+
+    a
+        font-size: 1.25rem
+        font-weight: 700
+        text-decoration: none
+
+.recognition-list
+    border-bottom: 1px solid $epsilon
+    display: grid
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    margin-top: 3.5rem
+
+    li
+        border-top: 1px solid $epsilon
+        padding: 2rem 0
+
+        &:nth-child(odd)
+            padding-right: 2rem
+
+        &:nth-child(even)
+            border-left: 1px solid $epsilon
+            padding-left: 2rem
+
+    h4
+        font-size: 1.5rem
+        line-height: 1.4
+        margin: .6rem 0 .8rem
+
+    p:not(.recognition-meta)
+        color: $alpha
+        font-size: 1.35rem
+        line-height: 1.6
+        margin: 0 0 .8rem
+
+    a
+        font-size: 1.15rem
+        font-weight: 700
+        text-decoration: none
+
+.interest-group
+    border-top: 1px solid $epsilon
+    max-width: 820px
+    padding: 3.5rem 0
+    scroll-margin-top: 2rem
+
+    > h2
+        font-size: 2rem
+        margin: 0 0 1.2rem
+        text-align: center
+
+.interest-browser
+    background: var(--surface)
+    margin: 0 0 3rem
+    padding: 2rem 2.4rem
+    text-align: center
+
+    h2
+        font-size: 1.2rem
+        margin: 0 0 .6rem
+
+    > p
+        color: $gama
+        font-size: 1.3rem
+        line-height: 1.5
+        margin: 0 auto 1.4rem
+        max-width: 58ch
+
+    ul
+        display: flex
+        flex-wrap: wrap
+        gap: 1rem 2.8rem
+        justify-content: center
+        list-style: none
+        margin: 0
+        padding: 0
+
+    a
+        color: $alpha
+        font-size: 1.45rem
+        text-decoration-color: transparent
+
+        &:hover,
+        &:focus-visible
+            color: $delta
+            text-decoration-color: currentColor
+
+.empty-interest
+    border-bottom: 1px solid $epsilon
+    border-top: 1px solid $epsilon
+    color: $gama
+    font-size: 1.4rem
+    margin: 0
+    padding: 2rem 0
+    text-align: center
+
+.project-section,
+.reading-section
+    margin-bottom: 6rem
+
+.section-heading
+    margin-bottom: 2.5rem
+
+.project-grid
+    display: grid
+    gap: 1.5rem
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+
+.project-card,
+.project-evidence
+    border: 1px solid $epsilon
+    padding: 2.2rem
+
+.project-card h3
+    margin-top: 0
+
+.project-date
+    color: $gama
+    font-size: 1.2rem
+
+.text-link
+    font-size: 1.3rem
+    font-weight: 600
+    text-decoration: none
+
+.post
+    margin-left: auto
+    margin-right: auto
+    max-width: 68ch
+
+    > .title
+        font-size: clamp(3rem, 5vw, 4.8rem)
+        letter-spacing: -.04em
+
+    > p,
+    > ul,
+    > ol,
+    > blockquote
+        font-family: $fontSans
+        font-size: 1.72rem
+        line-height: 1.72
+        margin-left: auto
+        margin-right: auto
+        max-width: 66ch
+
+    > p
+        letter-spacing: 0
+
+    blockquote
+        border-left-color: $delta
+        padding-left: 2rem
+
+@media only screen and (max-width: 720px)
+    .profile-intro
+        gap: 3rem
+        grid-template-columns: 1fr
+        padding: 4rem 0
+
+    .profile-links
+        border-left: 0
+        border-top: 1px solid $epsilon
+        padding: 2.4rem 0 0
+
+    .profile-entry
+        gap: .7rem
+        grid-template-columns: 1fr auto
+
+    .entry-period
+        grid-column: 1 / -1
+
+    .entry-main
+        grid-column: 1
+
+    .entry-link
+        grid-column: 2
+        grid-row: 2
+
+    .entry-teaser
+        grid-column: 1 / -1
+
+        a
+            justify-self: end
+
+    .highlight-item
+        gap: .8rem
+        grid-template-columns: 1fr
+
+    .responsibility-list li,
+    .featured-production,
+    .additional-productions li,
+    .recognition-feature
+        gap: .8rem
+        grid-template-columns: 1fr
+
+    .featured-production header,
+    .production-resources
+        grid-column: 1
+        grid-row: auto
+
+    .production-resources
+        margin-top: .5rem
+
+    .recognition-feature
+        gap: 2rem
+
+    .recognition-photo-secondary
+        max-width: 360px
+
+    .recognition-list
+        grid-template-columns: 1fr
+
+        li:nth-child(odd),
+        li:nth-child(even)
+            border-left: 0
+            padding-left: 0
+            padding-right: 0
+
+    .resource-links,
+    .highlight-item .item-period
+        grid-column: 1
+
+    .highlight-item .item-period
+        margin: -.2rem 0 .4rem
+
+    .project-grid
+        grid-template-columns: 1fr
+
+@media only screen and (max-width: 520px)
+    .wrapper-large
+        width: 88%
+
+    .page
+        margin-top: 5rem
+
+    .page-title
+        margin-top: 4rem
+
+    .profile-copy
+        grid-template-columns: 62px minmax(0, 1fr)
+
+    .profile-photo
+        height: 62px
+        width: 62px
+
+    .profile-copy h1
+        font-size: 2.55rem
+
+    .profile-bio
+        font-size: 1.55rem
+
+    .section-browser
+        margin-top: 2.8rem
+        padding: 1.8rem
+
+    .section-browser ul
+        gap: 1rem 2rem
+
+    .profile-section
+        padding-top: 4rem
+
+    .profile-entry
+        padding: 2rem 0
+
+    .entry-link
+        font-size: 0
+
+        span[aria-hidden="true"]
+            font-size: 1.6rem
+
+    .media-item > .media-thumbnail
+        height: 54px
+        width: 54px
+
+    .section-header
+        align-items: center
+        flex-direction: column
+        gap: .7rem
+
+        > a
+            position: static
+
+@media (prefers-reduced-motion: reduce)
+    html
+        scroll-behavior: auto
+
+    body
+        transition: none

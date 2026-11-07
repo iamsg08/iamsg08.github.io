@@ -1,0 +1,49 @@
+{% if page.credits or page.recognition or page.resources or page.gallery %}
+<section class="project-evidence" aria-labelledby="project-evidence-title">
+    <h2 id="project-evidence-title">Credits &amp; public material</h2>
+
+    {% if page.credits %}
+        <dl class="credit-list">
+            {% for credit in page.credits %}
+                <div>
+                    <dt>{{ credit.label }}</dt>
+                    <dd>{{ credit.value }}</dd>
+                </div>
+            {% endfor %}
+        </dl>
+    {% endif %}
+
+    {% if page.recognition %}
+        <div class="evidence-group">
+            <h3>Recognition</h3>
+            <ul class="resource-links">
+                {% for item in page.recognition %}
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.label }} <span class="resource-type">{{ item.type }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if page.resources %}
+        <div class="evidence-group">
+            <h3>Watch &amp; read</h3>
+            <ul class="resource-links">
+                {% for item in page.resources %}
+                    <li><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.label }} <span class="resource-type">{{ item.type }}</span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    {% if page.gallery %}
+        <div class="project-gallery">
+            {% for image in page.gallery %}
+                <figure>
+                    <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}">
+                    {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+                </figure>
+            {% endfor %}
+        </div>
+    {% endif %}
+</section>
+{% endif %}
