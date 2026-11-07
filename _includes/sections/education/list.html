@@ -1,0 +1,20 @@
+<section class="detail-list" aria-label="Education">
+    {% for item in site.data.education %}
+        <article class="detail-section" id="{{ item.id }}">
+            <header class="detail-header">
+                <p class="detail-period">{{ item.period }}</p>
+                <h2>{{ item.qualification }}</h2>
+                <p class="detail-place">{{ item.institution }}</p>
+            </header>
+            {% if item.details %}<div class="highlight-list">
+                {% for detail in item.details %}
+                    <section class="highlight-item">
+                        <h3>{% if detail.url %}<a href="{{ detail.url }}" target="_blank" rel="noopener noreferrer">{{ detail.label }}</a>{% else %}{{ detail.label }}{% endif %}</h3>
+                        {% if detail.period %}<p class="item-period">{{ detail.period }}</p>{% endif %}
+                        <p>{{ detail.text }}</p>
+                    </section>
+                {% endfor %}
+            </div>{% endif %}
+        </article>
+    {% endfor %}
+</section>

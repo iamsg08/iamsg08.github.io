@@ -1,0 +1,27 @@
+{% assign entries = site.data.timeline | where: "kind", include.kind %}
+<section class="profile-section" id="{{ include.id }}" aria-labelledby="{{ include.id }}-title">
+    <header class="section-header">
+        <h2 id="{{ include.id }}-title">{{ include.title }}</h2>
+    </header>
+    <ol class="profile-entry-list">
+        {% for item in entries %}
+            <li class="profile-entry">
+                <p class="entry-period">{{ item.period }}</p>
+                <div class="entry-main">
+                    <h3>{{ item.title }}</h3>
+                    <p class="entry-place">{{ item.place }}</p>
+                    {% if item.summary %}<p class="entry-summary">{{ item.summary }}</p>{% endif %}
+                </div>
+                {% unless item.teaser %}
+                    <a class="entry-link" href="{{ item.href | relative_url }}">{{ include.link_label }}<span class="sr-only">: {{ item.title }} at {{ item.place }}</span> <span aria-hidden="true">→</span></a>
+                {% endunless %}
+                {% if item.teaser %}
+                    <div class="entry-teaser">
+                        <p>{{ item.teaser.text }}</p>
+                        <a href="{{ item.teaser.href | relative_url }}">{{ item.teaser.label }} <span aria-hidden="true">→</span></a>
+                    </div>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ol>
+</section>

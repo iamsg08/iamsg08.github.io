@@ -1,0 +1,34 @@
+- id: rising-sun-pictures
+  kind: experience
+  period: Aug 2024 - Present
+  title: Machine Learning Developer
+  place: Rising Sun Pictures
+  summary: Production machine learning for visual effects, performance transfer, and ML-driven shot solutions.
+  href: /experience/#rising-sun-pictures
+  teaser:
+    text: "Selected credits include Sinners and Allianz: Care Never Gives Up, with team recognition spanning a Visual Effects Oscar nomination, an AEAF Special Merit Award, and an Engineering, Science & Technology Emmy."
+    label: Explore RSP work
+    href: /experience/#rising-sun-pictures
+
+- id: insightfactory
+  kind: experience
+  period: Jul 2021 - Jul 2024
+  title: Data Scientist
+  place: InsightFactory.ai
+  summary: Predictive maintenance, production data pipelines, and decision-support analytics.
+  href: /experience/#insightfactory
+
+- id: university-of-adelaide
+  kind: education
+  period: 2019 - 2021
+  title: Master of Data Science
+  place: The University of Adelaide
+  summary: Postgraduate study alongside computer vision teaching, NLP research, and an AIML research project.
+  href: /education/#university-of-adelaide
+
+- id: vtu
+  kind: education
+  period: 2015 - 2019
+  title: Mechanical Engineering
+  place: VTU
+  href: /education/#vtu

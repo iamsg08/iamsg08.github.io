@@ -1,0 +1,21 @@
+- id: university-of-adelaide
+  institution: The University of Adelaide
+  qualification: Master of Data Science
+  period: 2019 - 2021
+  details:
+    - label: Teaching and research
+      period: Aug 2020 - Dec 2021
+      text: Led computer vision workshops and contributed to research in abstractive multi-document summarisation.
+    - label: AIML research project
+      period: Jul 2020 - Jun 2021
+      text: Developed and evaluated generative models for foreground image synthesis with the Australian Institute for Machine Learning.
+    - label: Publication
+      text: Co-authored a peer-reviewed PACLIC 2022 paper on abstractive multi-document summarisation.
+      url: https://arxiv.org/abs/2109.11199
+    - label: Recognition
+      text: Adelaide Graduate Award (May 2021) and University of Adelaide Research Scholarship (December 2020).
+
+- id: vtu
+  institution: VTU
+  qualification: Mechanical Engineering
+  period: 2015 - 2019

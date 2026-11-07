@@ -1,0 +1,45 @@
+# Add only genuine entries. Everything renders in the Library; the homepage
+# keeps one permanent Library link and does not duplicate these entries.
+#
+# - id: stable-slug
+#   status: now # now or recommended
+#   type: article # article, book, video, film, or other
+#   title: Required title
+#   creator: Author, creator, publication, or channel
+#   url: https://example.com # optional
+#   year: 2026 # optional
+#   date_added: 2026-11-05
+#   note: A short personal reason for reading, watching, or recommending it. # optional
+#   image: /assets/images/example.jpg # optional local image
+#
+# To create an entry from a link and fetch its title/thumbnail automatically:
+# bundle exec ruby scripts/add_interest.rb URL --type article --note "Why I am sharing it"
+
+- id: you-could-be-taking-way-better-photos-on-your-phone
+  status: recommended
+  type: article
+  title: You could be taking way better photos on your phone
+  creator: The Verge
+  url: https://www.theverge.com/tech/973055/how-to-take-better-smartphone-photos
+  date_added: '2026-11-07'
+  year: 2026
+  image: "/assets/images/interests/you-could-be-taking-way-better-photos-on-your-phone.jpg"
+  note: A practical smartphone photography guide I recommend.
+
+- id: behind-the-visual-effects-of-sinners-warner-bros-entertainment
+  status: recommended
+  type: video
+  title: Behind the Visual Effects of Sinners
+  creator: Warner Bros.
+  url: https://www.youtube.com/watch?v=i2mRTtIqUqg
+  date_added: '2026-11-07'
+  note: An official look at the visual-effects work behind Sinners.
+
+- id: sinners-michael-becoming-the-smokestack-twins-behind-the-scenes-warner-bros-entertainment
+  status: recommended
+  type: video
+  title: "Sinners: Michael Becoming the Smokestack Twins"
+  creator: Warner Bros. Entertainment
+  url: https://www.youtube.com/watch?v=s72cBC-v6UE&t=480s
+  date_added: '2026-11-07'
+  note: An official behind-the-scenes feature on creating the Smokestack Twins.

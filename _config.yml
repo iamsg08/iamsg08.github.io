@@ -1,36 +1,30 @@
 # main text of home
 title: Shubham Gupta
-bio: Machine Learning Developer at Rising Sun Pictures
+bio: Machine Learning Developer · Computer Vision & VFX
+intro: I work at Rising Sun Pictures, developing production machine-learning tools for visual effects. My background spans computer vision, data science, and applied ML systems.
 
 # twitter summary info
-description: Something
+description: Machine learning developer specializing in computer vision, deep learning, and production ML for visual effects.
 
 # if it's an external image, update below for true
 # better with square images
 external-image: False
 picture: assets/images/PI_SG.jpg
 
-# your site color theme, true for dark theme, 
-# false to light theme, auto to switch with system.
-dark-theme: True
-
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url: https://iamsg08.github.io/src/cv.pdf
+resume-external: false
+resume-url: /assets/resumes/current/shubham-gupta-resume-november-2026.pdf
 
-url: https://iamsg08.github.io/
+url: https://iamsg08.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
 
-# if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: github # enter this from your disqus account
-  categories: [blog] # only show disqus for posts that have these categories
+disqus: false
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -42,7 +36,7 @@ email: iamsg08@gmail.com
 
 authors:
   sg:
-    name: Shuhbham Gupta
+    name: Shubham Gupta
     bio: Machine Learning Developer at Rising Sun Pictures
     external-image: false
     picture: assets/images/PI_SG.jpg
@@ -57,32 +51,33 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
+experience: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: false
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
-show-tags: true
+show-tags: false
 
 # related posts inside a post?
-related: true
+related: false
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: []
 
 # show author block at the end of a post ?
 show-author: true
 
 # do you want some animations?
-animation: true
+animation: false
 
 # add default values to specific pages or layouts
 defaults:
@@ -97,7 +92,6 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-gist
-  - jekyll-feed
   - jemoji
 
 compress_html:
@@ -112,5 +106,11 @@ exclude:
     "Gemfile",
     "Gemfile.lock",
     "FAQ.md",
+    "CONTRIBUTION.md",
+    "AGENTS.md",
+    "agent.md",
+    "blog.html",
+    "tags.html",
+    "_posts/2024-03-03-template.markdown",
     "vendor",
   ]

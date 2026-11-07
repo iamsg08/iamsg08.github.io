@@ -1,46 +1,52 @@
-.nav,
-.nav-home
+.utility-nav
     > .list
+        align-items: center
+        display: flex
+        gap: 1.6rem
         list-style: none
         margin: 0
-        padding: 0 13px 0
-
-        > .item
-            display: inline-block
-
-        > .item > .link
-            display: inline-block
-            font-weight: $thin-font
-            font-size: 1.4rem
-            padding: 20px 10px
-            text-decoration: none
-
-.nav
-    position: absolute
-    right: 0
-    top: 0
-
-    > .list
-        padding: 0 13px 0
-
-        > .item > .link
-            font-size: 1.4rem
-            padding: 20px 10px
-
-.nav-home
-    margin-top: 40px
-    text-align: center
-
-    > .list
         padding: 0
 
-        > .item > .link
-            font-size: 2rem
-            padding: 7px 15px
-            margin: 0
-            border-radius: 4%
-            transition: all .4s ease-in-out
-            width: 70px
+        > .item
+            display: inline-flex
 
-            &:hover
-                color: $alpha
+        > .item > .link
+            color: $alpha
+            font-size: 1.35rem
+            font-weight: 600
+            text-decoration-color: transparent
+            text-decoration-thickness: 1px
+            text-underline-offset: .28em
+
+            &:hover,
+            &:focus-visible
+                color: $delta
+                text-decoration-color: currentColor
+
+.theme-toggle
+    align-items: center
+    appearance: none
+    background: transparent
+    border: 1px solid $epsilon
+    border-radius: 50%
+    color: $beta
+    cursor: pointer
+    display: inline-flex
+    font: inherit
+    height: 32px
+    justify-content: center
+    line-height: 1
+    padding: 0
+    width: 32px
+
+    &:hover,
+    &:focus-visible
+        background: var(--surface)
+        border-color: $gama
+
+@media only screen and (max-width: 520px)
+    .utility-nav > .list
+        gap: 1rem
+
+        > .item > .link
+            font-size: 1.25rem

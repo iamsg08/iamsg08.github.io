@@ -1,0 +1,123 @@
+<section class="detail-list experience-list" aria-label="Professional experience">
+    {% for experience in site.data.experience %}
+        <article class="detail-section" id="{{ experience.id }}">
+            <header class="detail-header">
+                <p class="detail-period">{{ experience.period }}</p>
+                <h2>{{ experience.role }}</h2>
+                <a href="{{ experience.company_url }}" target="_blank" rel="noopener noreferrer">{{ experience.company }} <span aria-hidden="true">↗</span></a>
+                <p>{{ experience.summary }}</p>
+            </header>
+
+            {% if experience.responsibilities %}
+                <section class="experience-subsection" aria-labelledby="{{ experience.id }}-responsibilities">
+                    <h3 class="experience-subheading" id="{{ experience.id }}-responsibilities">{{ experience.responsibilities_title | default: "Work" }}</h3>
+                    <ul class="responsibility-list">
+                        {% for responsibility in experience.responsibilities %}
+                            <li>
+                                <h4>{{ responsibility.title }}</h4>
+                                <p>{{ responsibility.summary }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+
+            {% if experience.projects %}
+                <section class="experience-subsection" aria-labelledby="{{ experience.id }}-projects">
+                    <h3 class="experience-subheading" id="{{ experience.id }}-projects">{{ experience.projects_title | default: "Selected Projects" }}</h3>
+
+                    <div class="featured-production-list">
+                        {% for project in experience.projects %}
+                            {% if project.featured %}
+                                <article class="featured-production"{% if project.id %} id="{{ experience.id }}-{{ project.id }}"{% endif %}>
+                                    <header>
+                                        <p class="production-label">{{ experience.project_label | default: "Selected project" }}</p>
+                                        <h4>
+                                            {% if project.url %}<a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }} <span aria-hidden="true">↗</span></a>
+                                            {% elsif project.case_study_url %}<a href="{{ project.case_study_url | relative_url }}">{{ project.title }}</a>
+                                            {% else %}{{ project.title }}{% endif %}
+                                        </h4>
+                                        {% if project.credit %}<p class="production-credit">{{ project.credit }}</p>{% endif %}
+                                    </header>
+                                    <p class="production-summary">{{ project.summary }}</p>
+                                    {% if project.resources %}
+                                        <ul class="production-resources" aria-label="Resources for {{ project.title }}">
+                                            {% for resource in project.resources %}
+                                                {% include sections/experience/resource.html resource=resource %}
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </article>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    {% assign additional_count = 0 %}
+                    {% for project in experience.projects %}{% unless project.featured %}{% assign additional_count = additional_count | plus: 1 %}{% endunless %}{% endfor %}
+                    {% if additional_count > 0 %}
+                        <div class="additional-productions">
+                            <h4>Additional productions</h4>
+                            <ul>
+                                {% for project in experience.projects %}
+                                    {% unless project.featured %}
+                                        <li>
+                                            {% if project.url %}<a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title }} <span aria-hidden="true">↗</span></a>{% else %}<strong>{{ project.title }}</strong>{% endif %}
+                                            <span>{{ project.summary }}</span>
+                                        </li>
+                                    {% endunless %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                </section>
+            {% endif %}
+
+            {% if experience.recognition %}
+                <section class="experience-subsection recognition-section" aria-labelledby="{{ experience.id }}-recognition">
+                    <h3 class="experience-subheading" id="{{ experience.id }}-recognition">{{ experience.recognition_title | default: "Recognition" }}</h3>
+
+                    {% assign featured_recognition = experience.recognition | where: "featured", true | first %}
+                    {% assign primary_image = experience.gallery | where: "role", "primary" | first %}
+                    {% assign secondary_image = experience.gallery | where: "role", "secondary" | first %}
+
+                    {% if primary_image %}
+                        <figure class="recognition-photo recognition-photo-primary">
+                            <img src="{{ primary_image.src | relative_url }}" srcset="{{ primary_image.srcset }}" sizes="{{ primary_image.sizes }}" width="{{ primary_image.width }}" height="{{ primary_image.height }}" alt="{{ primary_image.alt | escape }}" loading="lazy" decoding="async">
+                            <figcaption>{{ primary_image.caption }}</figcaption>
+                        </figure>
+                    {% endif %}
+
+                    {% if featured_recognition %}
+                        <article class="recognition-feature">
+                            {% if secondary_image %}
+                                <figure class="recognition-photo recognition-photo-secondary">
+                                    <img src="{{ secondary_image.src | relative_url }}" srcset="{{ secondary_image.srcset }}" sizes="{{ secondary_image.sizes }}" width="{{ secondary_image.width }}" height="{{ secondary_image.height }}" alt="{{ secondary_image.alt | escape }}" loading="lazy" decoding="async">
+                                    <figcaption>{{ secondary_image.caption }}</figcaption>
+                                </figure>
+                            {% endif %}
+                            <div class="recognition-copy">
+                                <p class="recognition-meta">{{ featured_recognition.year }} · {{ featured_recognition.level }}</p>
+                                <h4>{{ featured_recognition.title }}</h4>
+                                <p>{{ featured_recognition.description }}</p>
+                                <a href="{{ featured_recognition.source_url }}" target="_blank" rel="noopener noreferrer">{{ featured_recognition.source_label }} <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+                    {% endif %}
+
+                    <ul class="recognition-list">
+                        {% for recognition in experience.recognition %}
+                            {% unless recognition.featured %}
+                                <li>
+                                    <p class="recognition-meta">{{ recognition.year }} · {{ recognition.level }}</p>
+                                    <h4>{{ recognition.title }}</h4>
+                                    <p>{{ recognition.description }}</p>
+                                    <a href="{{ recognition.source_url }}" target="_blank" rel="noopener noreferrer">{{ recognition.source_label }} <span aria-hidden="true">↗</span></a>
+                                </li>
+                            {% endunless %}
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% endif %}
+        </article>
+    {% endfor %}
+</section>

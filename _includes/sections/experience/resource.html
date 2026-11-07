@@ -1,0 +1,26 @@
+{% assign youtube_id = "" %}
+{% if include.resource.url contains "youtu.be/" %}
+    {% assign youtube_id = include.resource.url | split: "youtu.be/" | last | split: "?" | first %}
+{% elsif include.resource.url contains "youtube.com/watch" and include.resource.url contains "v=" %}
+    {% assign youtube_id = include.resource.url | split: "v=" | last | split: "&" | first %}
+{% elsif include.resource.url contains "youtube.com/shorts/" %}
+    {% assign youtube_id = include.resource.url | split: "youtube.com/shorts/" | last | split: "?" | first %}
+{% endif %}
+
+<li class="production-resource{% if youtube_id != '' %} production-resource-video{% endif %}">
+    {% if include.resource.internal %}
+        {% assign resource_url = include.resource.url | relative_url %}
+        <a href="{{ resource_url }}">
+    {% else %}
+        <a href="{{ include.resource.url }}" target="_blank" rel="noopener noreferrer">
+    {% endif %}
+        {% if youtube_id != "" %}
+            <img src="https://i.ytimg.com/vi/{{ youtube_id }}/mqdefault.jpg" width="320" height="180" alt="" loading="lazy" decoding="async">
+        {% endif %}
+        <span class="resource-copy">
+            <span class="resource-type">{{ include.resource.type }}</span>
+            <strong>{{ include.resource.label }}</strong>
+        </span>
+        <span class="resource-arrow" aria-hidden="true">↗</span>
+    </a>
+</li>

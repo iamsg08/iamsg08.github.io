@@ -2,7 +2,7 @@
 title: "Template Something"
 layout: post
 date: 2024-03-03 10:00
-tag: sg
+tags: [sg]
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
