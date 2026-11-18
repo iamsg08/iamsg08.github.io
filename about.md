@@ -8,9 +8,11 @@ layout: page
 ---
 Hello, I am Shubham.
 
-I am currently a **Machine Learning Developer at [Rising Sun Pictures](https://www.linkedin.com/company/rising-sun-pictures/)**, where I work on cutting-edge visual effects for film and television. My primary focus is on developing and deploying machine learning solutions for facial replacement in major productions, leveraging deep learning frameworks such as PyTorch and advanced Python development practices. I am also actively researching performance transfer techniques, enabling the seamless mapping of human performances onto digital characters.
+I am currently a **Machine Learning Developer at [Alussein](https://www.alussein.com/)**.
 
-Previously, I spent nearly three years as a Data Scientist at [InsightFactory.ai](https://insightfactory.ai/), where I specialized in building and deploying machine learning models across the full data science pipeline. My experience there included data preparation, feature engineering, model deployment, and management, using tools such as PySpark, SQL, Pandas, MLflow, Azure, Databricks, and Power BI.
+Previously, I was a Machine Learning Developer at [Rising Sun Pictures](https://www.rsp.com.au/), where I developed and deployed machine-learning solutions for visual effects, including face replacement and performance transfer workflows.
+
+Before that, I spent nearly three years as a Data Scientist at [InsightFactory.ai](https://insightfactory.ai/), where I specialized in building and deploying machine learning models across the full data science pipeline. My experience there included data preparation, feature engineering, model deployment, and management, using tools such as PySpark, SQL, Pandas, MLflow, Azure, Databricks, and Power BI.
 
 I hold an M.Sc. in Data Science from the University of Adelaide (2021) and a Bachelor’s in Mechanical Engineering.
 

@@ -1,7 +1,7 @@
 # main text of home
 title: Shubham Gupta
 bio: Machine Learning Developer · Computer Vision & VFX
-intro: I work at Rising Sun Pictures, developing production machine-learning tools for visual effects. My background spans computer vision, data science, and applied ML systems.
+intro: I am a Machine Learning Developer at Alussein. My background spans computer vision, data science, and applied ML systems.
 
 # twitter summary info
 description: Machine learning developer specializing in computer vision, deep learning, and production ML for visual effects.
@@ -37,7 +37,7 @@ email: iamsg08@gmail.com
 authors:
   sg:
     name: Shubham Gupta
-    bio: Machine Learning Developer at Rising Sun Pictures
+    bio: Machine Learning Developer at Alussein
     external-image: false
     picture: assets/images/PI_SG.jpg
     # twitter: johndoe
