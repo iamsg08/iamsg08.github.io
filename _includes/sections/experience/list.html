@@ -4,8 +4,12 @@
             <header class="detail-header">
                 <p class="detail-period">{{ experience.period }}</p>
                 <h2>{{ experience.role }}</h2>
-                <a href="{{ experience.company_url }}" target="_blank" rel="noopener noreferrer">{{ experience.company }} <span aria-hidden="true">↗</span></a>
-                <p>{{ experience.summary }}</p>
+                {% if experience.company_url %}
+                    <a href="{{ experience.company_url }}" target="_blank" rel="noopener noreferrer">{{ experience.company }} <span aria-hidden="true">↗</span></a>
+                {% else %}
+                    <p>{{ experience.company }}</p>
+                {% endif %}
+                {% if experience.summary %}<p>{{ experience.summary }}</p>{% endif %}
             </header>
 
             {% if experience.responsibilities %}

@@ -1,6 +1,13 @@
+- id: alussein
+  kind: experience
+  period: Nov 2026 - Present
+  title: Machine Learning Developer
+  place: Alussein
+  href: /experience/#alussein
+
 - id: rising-sun-pictures
   kind: experience
-  period: Aug 2024 - Present
+  period: Aug 2024 - Nov 2026
   title: Machine Learning Developer
   place: Rising Sun Pictures
   summary: Production machine learning for visual effects, performance transfer, and ML-driven shot solutions.

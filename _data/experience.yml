@@ -1,8 +1,14 @@
+- id: alussein
+  company: Alussein
+  company_url: https://www.alussein.com/
+  role: Machine Learning Developer
+  period: November 2026 - Present
+
 - id: rising-sun-pictures
   company: Rising Sun Pictures
   company_url: https://www.rsp.com.au/
   role: Machine Learning Developer
-  period: August 2024 - Present
+  period: August 2024 - November 2026
   summary: Production machine learning for visual effects across feature-film and commercial workflows.
   responsibilities_title: Machine Learning Work
   responsibilities:
